@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Created with Jaspersoft Studio version 6.15.0.final using JasperReports Library version 6.15.0-dd49bfb94918336b8321d5507193f0169ead4e95  -->
+<!-- Created with Jaspersoft Studio version 6.20.0.final using JasperReports Library version 6.20.0-2bc7ab61c56f459e8176eb05c7705e145cd400ad  -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ReportWithParams_Beans" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="c726d4f2-b2f0-4f5f-9a24-303e98c73a7f">
 	<parameter name="id" class="java.lang.String"/>
 	<parameter name="name" class="java.lang.String"/>
@@ -15,16 +15,16 @@
 		<band splitType="Stretch"/>
 	</background>
 	<title>
-		<band height="68" splitType="Stretch">
+		<band height="60" splitType="Stretch">
 			<staticText>
-				<reportElement x="0" y="0" width="555" height="40" uuid="b1473a2b-e9d0-46ce-8cc3-c6bf06652bc3"/>
+				<reportElement x="0" y="2" width="555" height="40" forecolor="#0C3BF5" uuid="b1473a2b-e9d0-46ce-8cc3-c6bf06652bc3"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font size="16" isBold="true"/>
+					<font size="19" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Usage Of Bean Array & Parameters]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="0" y="30" width="555" height="30" uuid="d2982dff-8faf-4b67-a230-7acec43c268f"/>
+				<reportElement x="0" y="30" width="555" height="30" forecolor="#F53733" uuid="d2982dff-8faf-4b67-a230-7acec43c268f"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font size="15" isBold="true"/>
 				</textElement>
@@ -35,53 +35,53 @@
 	<pageHeader>
 		<band height="188" splitType="Stretch">
 			<textField>
-				<reportElement x="348" y="10" width="160" height="30" uuid="c216c1d7-2f58-42ca-a212-12bc560ad6f4"/>
-				<textElement textAlignment="Left" verticalAlignment="Middle">
+				<reportElement x="340" y="10" width="160" height="30" uuid="c216c1d7-2f58-42ca-a212-12bc560ad6f4"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font size="12"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{id}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="348" y="49" width="160" height="30" uuid="40fcb644-66c0-4090-bce4-3dc2c784a262"/>
-				<textElement textAlignment="Left" verticalAlignment="Middle">
+				<reportElement x="340" y="49" width="160" height="30" uuid="40fcb644-66c0-4090-bce4-3dc2c784a262"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font size="12"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{name}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="348" y="91" width="160" height="30" uuid="baf0a86f-a0d0-4a5b-8e0b-f27bbe80575e">
+				<reportElement x="340" y="91" width="160" height="30" uuid="baf0a86f-a0d0-4a5b-8e0b-f27bbe80575e">
 					<property name="com.jaspersoft.studio.unit.y" value="px"/>
 				</reportElement>
-				<textElement textAlignment="Left" verticalAlignment="Middle">
+				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font size="12"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{address}]]></textFieldExpression>
 			</textField>
-			<image>
-				<reportElement x="169" y="4" width="100" height="150" uuid="d193d778-ee33-4fb4-8526-e654543f20ae"/>
-				<imageExpression><![CDATA["view/assets/images/user.jpeg"]]></imageExpression>
-			</image>
 			<staticText>
-				<reportElement x="283" y="10" width="45" height="30" uuid="7919840e-1e9a-4322-ab48-00c3b324882f"/>
-				<textElement textAlignment="Left" verticalAlignment="Middle">
+				<reportElement x="275" y="10" width="45" height="30" uuid="7919840e-1e9a-4322-ab48-00c3b324882f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[ID :]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="283" y="49" width="45" height="30" uuid="974d7654-8e6f-4e11-954d-681d56817e69"/>
-				<textElement textAlignment="Left" verticalAlignment="Middle">
+				<reportElement x="275" y="49" width="45" height="30" uuid="974d7654-8e6f-4e11-954d-681d56817e69"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Name :]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="283" y="91" width="45" height="30" uuid="ae098050-b52d-451e-92aa-2394473bfb31"/>
-				<textElement textAlignment="Left" verticalAlignment="Middle">
+				<reportElement x="275" y="91" width="45" height="30" uuid="ae098050-b52d-451e-92aa-2394473bfb31"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Address :]]></text>
 			</staticText>
+			<image>
+				<reportElement x="100" y="20" width="100" height="101" uuid="9755d577-ffe8-487c-9aa4-03d28086ca94"/>
+				<imageExpression><![CDATA["view/assets/images/user.jpeg"]]></imageExpression>
+			</image>
 		</band>
 	</pageHeader>
 	<columnHeader>
@@ -96,7 +96,7 @@
 					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#403434"/>
 					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#403434"/>
 				</box>
-				<textElement verticalAlignment="Middle">
+				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[ID]]></text>
@@ -111,7 +111,7 @@
 					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#403434"/>
 					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#403434"/>
 				</box>
-				<textElement verticalAlignment="Middle">
+				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Name]]></text>
@@ -126,7 +126,7 @@
 					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#403434"/>
 					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#403434"/>
 				</box>
-				<textElement verticalAlignment="Middle">
+				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Address]]></text>
@@ -141,7 +141,7 @@
 					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#403434"/>
 					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#403434"/>
 				</box>
-				<textElement verticalAlignment="Middle">
+				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Salary]]></text>
@@ -160,7 +160,7 @@
 					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="rgba(0, 0, 0, 0.6117647)"/>
 					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="rgba(0, 0, 0, 0.6117647)"/>
 				</box>
-				<textElement verticalAlignment="Middle">
+				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font size="12"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{id}]]></textFieldExpression>
@@ -175,7 +175,7 @@
 					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="rgba(0, 0, 0, 0.6117647)"/>
 					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="rgba(0, 0, 0, 0.6117647)"/>
 				</box>
-				<textElement verticalAlignment="Middle">
+				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font size="12"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{name}]]></textFieldExpression>
@@ -190,7 +190,7 @@
 					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="rgba(0, 0, 0, 0.6117647)"/>
 					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="rgba(0, 0, 0, 0.6117647)"/>
 				</box>
-				<textElement verticalAlignment="Middle">
+				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font size="12"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{address}]]></textFieldExpression>
@@ -205,7 +205,7 @@
 					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="rgba(0, 0, 0, 0.6117647)"/>
 					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="rgba(0, 0, 0, 0.6117647)"/>
 				</box>
-				<textElement verticalAlignment="Middle">
+				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font size="12"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{salary}]]></textFieldExpression>
