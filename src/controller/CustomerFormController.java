@@ -195,7 +195,7 @@ public class CustomerFormController implements Initializable {
             JasperPrint jasperPrint = JasperFillManager.fillReport(compileReport, map, DBConnection.getDbConnection().getConnection());
             JasperViewer.viewReport(jasperPrint, false);
 
-            /*JasperPrintManager.printReport(jasperPrint,false);*/
+            /*JasperPrintManager.printReport(jasperPrint,false); --> Direct Print Bill */
 
         } catch (JRException e) {
             e.printStackTrace();
