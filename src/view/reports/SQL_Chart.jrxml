@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Created with Jaspersoft Studio version 6.15.0.final using JasperReports Library version 6.15.0-dd49bfb94918336b8321d5507193f0169ead4e95  -->
+<!-- Created with Jaspersoft Studio version 6.20.0.final using JasperReports Library version 6.20.0-2bc7ab61c56f459e8176eb05c7705e145cd400ad  -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="SQL_Chart" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="f1ae04f6-ba3d-4482-8f61-93cf9f510235">
 	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="JDBC Connection"/>
 	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
 	<queryString>
-		<![CDATA[select itemCode,sum(qty) as qty from OrderDetails group by itemCode order by qty desc;]]>
+		<![CDATA[select itemCode,sum(qty) as qty from OrderDetail group by itemCode order by qty desc;]]>
 	</queryString>
 	<field name="itemCode" class="java.lang.String">
 		<property name="com.jaspersoft.studio.field.name" value="itemCode"/>
 		<property name="com.jaspersoft.studio.field.label" value="itemCode"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="OrderDetails"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="orderdetail"/>
 		<fieldDescription><![CDATA[]]></fieldDescription>
 	</field>
 	<field name="qty" class="java.math.BigDecimal">
@@ -22,26 +22,26 @@
 	<title>
 		<band height="62" splitType="Stretch">
 			<staticText>
-				<reportElement x="0" y="0" width="555" height="30" uuid="f330c14a-cd84-4b7f-9b76-8f9cfe14027f"/>
+				<reportElement x="0" y="0" width="555" height="30" forecolor="#1F14F7" uuid="f330c14a-cd84-4b7f-9b76-8f9cfe14027f"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font size="16" isBold="true"/>
+					<font size="19" isBold="true"/>
 				</textElement>
 				<text><![CDATA[SQL Chart - SQL Data Source 2]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="0" y="24" width="555" height="30" uuid="a937656d-2b2a-42a1-928f-cc28d694a338"/>
+				<reportElement x="0" y="25" width="555" height="30" forecolor="#20968F" uuid="a937656d-2b2a-42a1-928f-cc28d694a338"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font size="13" isBold="true"/>
+					<font size="15" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Most Movable Item]]></text>
 			</staticText>
 		</band>
 	</title>
 	<summary>
-		<band height="574" splitType="Stretch">
+		<band height="647" splitType="Stretch">
 			<pieChart>
 				<chart evaluationTime="Report">
-					<reportElement x="0" y="13" width="555" height="264" uuid="a8247ff4-cc46-4937-93fa-005a53585ffe"/>
+					<reportElement x="0" y="24" width="555" height="264" uuid="08a34d53-01da-45f1-8dd0-ceefd2da9330"/>
 					<chartTitle/>
 					<chartSubtitle/>
 					<chartLegend/>
@@ -60,7 +60,7 @@
 			</pieChart>
 			<barChart>
 				<chart evaluationTime="Report">
-					<reportElement x="0" y="277" width="555" height="271" uuid="6d733f62-bf9a-4a68-ad02-0d189dd974a5"/>
+					<reportElement x="0" y="344" width="555" height="271" uuid="af5d9a00-cd8b-4e11-8912-e18c92cd0498"/>
 					<chartTitle/>
 					<chartSubtitle/>
 					<chartLegend/>
