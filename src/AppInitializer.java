@@ -5,7 +5,7 @@ import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
 /**
- * @author : Sanu Vithanage
+ * @author : Ravindu Prathibha
  * @since : 0.1.0
  **/
 

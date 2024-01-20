@@ -3,7 +3,7 @@ package view.tdm;
 import java.math.BigDecimal;
 
 /**
- * @author : Sanu Vithanage
+ * @author : Ravindu Prathibha
  * @since : 0.1.0
  **/
 public class CustomerTM {

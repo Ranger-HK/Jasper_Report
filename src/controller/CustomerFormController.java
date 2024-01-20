@@ -25,7 +25,7 @@ import java.util.HashMap;
 import java.util.ResourceBundle;
 
 /**
- * @author : Sanu Vithanage
+ * @author : Ravindu Prathibha
  * @since : 0.1.0
  **/
 public class CustomerFormController implements Initializable {
@@ -63,7 +63,7 @@ public class CustomerFormController implements Initializable {
     public void helloJasperEvent(MouseEvent event) {
         try {
             /*01-Lets catch the report file*/
-            JasperDesign design = JRXmlLoader.load(this.getClass().getResourceAsStream("/view/reports/WelcomeReport.jrxml"));
+            JasperDesign design = JRXmlLoader.load(this.getClass().getResourceAsStream("/view/reports/MyWelcomeReport.jrxml"));
 
             /*02- Lets compile the jasper design */
             JasperReport compileReport = JasperCompileManager.compileReport(design);
